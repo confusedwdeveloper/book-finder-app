@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./icons8-magazine-48.png" />
     <!-- <link rel="stylesheet" href="./styles/index.css"> -->
-    <title>Boilerplate App</title>
-</head>
-<body>
-    <h1>Boilerplate</h1>
+    <title>Bookfinder App</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Book Finder App</h1>
+      <p class="header__para">Find any book you want</p>
+    </header>
+    <main>
+      <section class="input-section">
+        <form class="input__form">
+          <div class="input__div">
+            <input type="text" class="text-input" />
+            <span class="alert">Please enter your search</span>
+          </div>
+          <button class="form__button">Search</button>
+        </form>
+      </section>
+      <section class="render-section">
+        <div id="root"></div>
+      </section>
+    </main>
+
     <script src="/scripts/index-bundle.js"></script>
-</body>
+  </body>
 </html>
